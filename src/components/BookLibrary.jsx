@@ -6,13 +6,12 @@ import Books from "../components/Books"
 
 import bookList from "../data/listofbooks.json"
 
-console.log(bookList)
 
 const BookLibrary = () => {
   return (
-    <div>
+    <div className='library'>
         <SearchBar/>
-        <Books/>
+        <Books books={bookList}/>
     </div>
   )
 }

@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Books = () => {
+import Book from "./Book"
+
+const Books = ({books}) => {
+  console.log(books)
   return (
-    <div>Books</div>
+    <div className='books'>
+      {books.map(book=>(
+        <Book title={book.title} author={book.author} genre={book.genre}/>
+      ))}
+    </div>
   )
 }
 
