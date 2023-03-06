@@ -6,7 +6,14 @@ const Books = ({books}) => {
   console.log(books)
   return (
     <div className='books'>
-      {books.map(book=>(
+      {books.sort(
+          (a,b)=>{
+            if(a.author.toLowerCase()<b.author.toLowerCase()){
+              return -1;
+            }else{
+              return 1;
+            }
+          }).map(book=>(
         <Book title={book.title} author={book.author} genre={book.genre}/>
       ))}
     </div>
