@@ -1,6 +1,7 @@
+$bgColor:hsl(48, 100%, 93%);
+
 .books {
   max-width: 1280px;
-  border: 1px solid red;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -13,7 +14,7 @@
 .book {
   width: 300px;
   height: 450px;
-  background-color: cornsilk;
+  background-color: $bgColor;
   border: 1px solid grey;
   box-shadow: 5px 5px 15px grey;
   display: flex;
@@ -43,5 +44,31 @@
   &__genre {
     padding: 20px;
     font-size: 12px;
+  }
+}
+
+.search{
+  max-width: 600px;
+  height: 30px;
+  padding: 0px 30px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 20px;
+  margin: 20px auto;
+  &__input{
+    border-radius: 10px;
+    padding: 3px 10px;
+  }
+  &__button{
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: $bgColor;
+    font-weight: 700;
+    transition: all .5s;
+    &:hover{
+      background-color: black;
+      color: $bgColor;
+      cursor: pointer;
+    }
   }
 }
