@@ -1,4 +1,4 @@
-.books{
+.books {
   max-width: 1280px;
   border: 1px solid red;
   margin: auto;
@@ -10,7 +10,7 @@
   padding: 20px;
 }
 
-.book{
+.book {
   width: 300px;
   height: 450px;
   background-color: cornsilk;
@@ -20,32 +20,28 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-}
-
-.book__frame{
-  border: 5px double gray;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.book__author{
-  padding: 20px 0px;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.book__title{
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  font-style: italic;
-}
-
-.book__genre{
-  padding: 20px;
-  font-size: 12px;
+  &__frame {
+    border: 5px double gray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__author {
+    padding: 20px 0px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  &__title {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+  }
+  &__genre {
+    padding: 20px;
+    font-size: 12px;
+  }
 }
