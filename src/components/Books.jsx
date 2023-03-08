@@ -14,7 +14,7 @@ const Books = ({books}) => {
               return 1;
             }
           }).map(book=>(
-        <Book title={book.title} author={book.author} genre={book.genre}/>
+        <Book key={book.title} title={book.title} author={book.author} genre={book.genre}/>
       ))}
     </div>
   )
